@@ -3754,7 +3754,7 @@ rm /tmp/crontab.tmp
 
 lnsb(){
 rm -rf /usr/bin/sb
-curl -L -o /usr/bin/sb -# --retry 2 --insecure https://raw.githubusercontent.com/yonggekkk/sing-box-yg/main/sb.sh
+curl -L -o /usr/bin/sb -# --retry 2 --insecure https://raw.githubusercontent.com/MyNicknme/SB_new/refs/heads/main/5protocol.sh
 chmod +x /usr/bin/sb
 }
 
@@ -3846,7 +3846,7 @@ iptables -t nat -F PREROUTING >/dev/null 2>&1
 netfilter-persistent save >/dev/null 2>&1
 service iptables save >/dev/null 2>&1
 green "Удаление Sing-box завершено!"
-blue "Будем рады видеть вас снова! Скрипт: bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/sing-box-yg/main/sb.sh)"
+blue "Будем рады видеть вас снова! Скрипт: bash <(curl -Ls https://raw.githubusercontent.com/MyNicknme/SB_new/refs/heads/main/5protocol.sh)"
 echo
 }
 
