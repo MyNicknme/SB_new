@@ -3122,7 +3122,7 @@ sed -i '/subcmsbid/d' /tmp/crontab.tmp
 crontab /tmp/crontab.tmp >/dev/null 2>&1
 rm /tmp/crontab.tmp
 rm -rf /root/web
-green "Локальная IP-ссылка подписки полностью удалена" && sleep 3 && sb
+green "Локальная IP-ссылка подписки полностью удалена" && sleep 3 && exit
 else
 changeserv
 fi
