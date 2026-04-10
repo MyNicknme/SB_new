@@ -33,7 +33,7 @@
 Запустите следующую команду в терминале вашего VPS:
 
 ```bash
-wget -N https://raw.githubusercontent.com/MyNicknme/SB_new/refs/heads/main/5protocol.sh && bash 5protocol.sh
+wget -N https://raw.githubusercontent.com/MyNicknme/SB_new/refs/heads/main/SB.sh && bash SB.sh
 
 ```
 
