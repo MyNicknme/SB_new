@@ -301,7 +301,7 @@ readp "Выберите【1-2】：" menu
 if [ -z "$menu" ] || [ "$menu" = "1" ] ; then
 zqzs
 else
-bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/acme-yg/main/acme.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/MyNicknme/Acme/refs/heads/main/Acme-yonggekkk.sh)
 if [[ ! -f /root/ygkkkca/cert.crt && ! -f /root/ygkkkca/private.key && ! -s /root/ygkkkca/cert.crt && ! -s /root/ygkkkca/private.key ]]; then
 red "Не удалось выпустить сертификат Acme, продолжаем использовать самоподписанный сертификат" 
 zqzs
@@ -3801,7 +3801,7 @@ rm /tmp/crontab.tmp
 
 lnsb(){
 rm -rf /usr/bin/sb
-curl -L -o /usr/bin/sb -# --retry 2 --insecure https://raw.githubusercontent.com/yonggekkk/sing-box-yg/main/sb.sh
+curl -L -o /usr/bin/sb -# --retry 2 --insecure https://raw.githubusercontent.com/MyNicknme/SB_new/refs/heads/main/sb.sh
 chmod +x /usr/bin/sb
 }
 
@@ -3901,7 +3901,7 @@ iptables -t nat -F PREROUTING >/dev/null 2>&1
 netfilter-persistent save >/dev/null 2>&1
 service iptables save >/dev/null 2>&1
 green "Удаление Sing-box завершено!"
-blue "Добро пожаловать снова в скрипт Sing-box-yg：bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/sing-box-yg/main/sb.sh)"
+blue "Добро пожаловать снова в скрипт Sing-box-yg：bash <(curl -Ls https://raw.githubusercontent.com/MyNicknme/SB_new/refs/heads/main/sb.sh)"
 echo
 }
 
@@ -3990,7 +3990,7 @@ fi
 
 acme(){
 #bash <(curl -Ls https://gitlab.com/rwkgyg/acme-script/raw/main/acme.sh)
-bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/acme-yg/main/acme.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/MyNicknme/Acme/refs/heads/main/Acme-yonggekkk.sh)
 }
 cfwarp(){
 #bash <(curl -Ls https://gitlab.com/rwkgyg/CFwarp/raw/main/CFwarp.sh)
