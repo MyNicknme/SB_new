@@ -1463,7 +1463,7 @@ cat <<EOF
         "tag": "hy2-$hostname",
         "server": "$cl_hy2_ip",
         "server_port": $hy2_port,
-		$(maxhy2ports)
+		$(sbhy2ports)
         "password": "$uuid",
         "tls": {
             "enabled": true,
@@ -1723,7 +1723,7 @@ $(sbany2)
         "vmess-$hostname",
         "hy2-$hostname",
         "tuic5-$hostname",
-        $(sbany1)
+$(sbany1)
         "vmess-tls-argo固定-$hostname",
         "vmess-argo固定-$hostname",
         "vmess-tls-argo临时-$hostname",
@@ -1738,7 +1738,7 @@ $(sbany2)
         "vmess-$hostname",
         "hy2-$hostname",
         "tuic5-$hostname",
-        $(sbany1)
+$(sbany1)
         "vmess-tls-argo固定-$hostname",
         "vmess-argo固定-$hostname",
         "vmess-tls-argo临时-$hostname",
@@ -1948,7 +1948,7 @@ $(sbany2)
         "vmess-$hostname",
         "hy2-$hostname",
         "tuic5-$hostname",
-        $(sbany1)
+$(sbany1)
         "vmess-tls-argo临时-$hostname",
         "vmess-argo临时-$hostname"
             ]
@@ -1961,7 +1961,7 @@ $(sbany2)
         "vmess-$hostname",
         "hy2-$hostname",
         "tuic5-$hostname",
-        $(sbany1)
+$(sbany1)
         "vmess-tls-argo临时-$hostname",
         "vmess-argo临时-$hostname"
             ],
@@ -2137,7 +2137,7 @@ $(sbany2)
         "vmess-$hostname",
         "hy2-$hostname",
         "tuic5-$hostname",
-        $(sbany1)
+$(sbany1)
         "vmess-tls-argo固定-$hostname",
         "vmess-argo固定-$hostname"
             ]
@@ -2150,7 +2150,7 @@ $(sbany2)
         "vmess-$hostname",
         "hy2-$hostname",
         "tuic5-$hostname",
-        $(sbany1)
+$(sbany1)
         "vmess-tls-argo固定-$hostname",
         "vmess-argo固定-$hostname"
             ],
