@@ -2813,7 +2813,7 @@ elif [ "$menu" = "3" ]; then
 if [ -n "$hy2_ports" ]; then
 hy2deports && sbshare > /dev/null 2>&1 && changeport
 else
-yellow "Для Hysteria2 несколько портов не настроены" && changeport
+sbshare > /dev/null 2>&1 && yellow "Для Hysteria2 несколько портов не настроены" && changeport
 fi
 else
 changeport
@@ -2854,7 +2854,7 @@ elif [ "$menu" = "3" ]; then
 if [ -n "$tu5_ports" ]; then
 tu5deports && sbshare > /dev/null 2>&1 && changeport
 else
-yellow "Для Tuic5 несколько портов не настроены" && changeport
+sbshare > /dev/null 2>&1 && yellow "Для Tuic5 несколько портов не настроены" && changeport
 fi
 else
 changeport
