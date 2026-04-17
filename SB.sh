@@ -1020,7 +1020,7 @@ fi
 if [[ -f /etc/s-box/cfvmadd_argo.txt ]]; then
 vmadd_argo=$(cat /etc/s-box/cfvmadd_argo.txt 2>/dev/null)
 else
-vmadd_argo=www.visa.com.sg
+vmadd_argo=cloudflare-ech.com
 fi
 hy2_port=$(sed 's://.*::g' /etc/s-box/sb.json | jq -r '.inbounds[2].listen_port')
 hy2_ports=$(iptables -t nat -nL --line 2>/dev/null | grep -w "$hy2_port" | awk '{print $8}' | sed 's/dpts://; s/dpt://' | tr '\n' ',' | sed 's/,$//')
@@ -3170,7 +3170,7 @@ green "Рекомендуется использовать официальны�
 blue "www.visa.com.sg"
 blue "www.wto.org"
 blue "www.web.com"
-blue "yg1.ygkkk.dpdns.org (цифру 1 в yg1 можно заменить на любую от 1 до 11, поддерживается Yongge)"
+blue "yg1.ygkkk.dpdns.org (цифру 1 в yg1 можно заменить на любую от 1 до 13, поддерживается Yongge)"
 echo
 yellow "1：Задать свой оптимальный CDN-адрес для основного узла Vmess-ws(tls)"
 yellow "2：Для пункта 1 — сбросить клиентский домен host/sni (домен, чей IP указывает на Cloudflare)"
