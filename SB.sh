@@ -3188,13 +3188,16 @@ fi
 echo
 readp "Введите свой оптимальный IP/домен：" menu
 echo "$menu" > /etc/s-box/cfvmadd_local.txt
+sbshare > /dev/null 2>&1
 green "Настройка выполнена успешно, выберите в главном меню пункт 9 для обновления конфигурации узлов" && sleep 2 && vmesscfadd
 elif  [ "$menu" = "2" ]; then
 rm -rf /etc/s-box/cfymjx.txt
+sbshare > /dev/null 2>&1
 green "Сброс выполнен успешно, можно выбрать пункт 1 и настроить заново" && sleep 2 && vmesscfadd
 elif  [ "$menu" = "3" ]; then
 readp "Введите свой оптимальный IP/домен：" menu
 echo "$menu" > /etc/s-box/cfvmadd_argo.txt
+sbshare > /dev/null 2>&1
 green "Настройка выполнена успешно, выберите в главном меню пункт 9 для обновления конфигурации узлов" && sleep 2 && vmesscfadd
 else
 changeserv
