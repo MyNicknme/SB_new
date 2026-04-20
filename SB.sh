@@ -850,7 +850,7 @@ cat > /etc/s-box/sb11.json <<EOF
 "domain_suffix":[
 "yg_kkk"
 ],
-"strategy": "prefer_ipv6"
+"strategy": "prefer_ipv4"
 },
 {
 "domain_suffix":[
@@ -3545,7 +3545,7 @@ changef(){
 [[ "$sbnh" == "1.10" ]] && num=10 || num=11
 sbymfl
 echo
-[[ "$sbnh" != "1.10" ]] && wfl4='пока не поддерживается' sfl6='пока не поддерживается' adfl4='пока не поддерживается' adfl6='пока не поддерживается'
+[[ "$sbnh" != "1.10" ]] && wfl6='временно не поддерживается' sfl6='временно не поддерживается' adfl4='временно не поддерживается' adfl6='временно не поддерживается'
 green "1：Сбросить домены маршрутизации warp-wireguard-ipv4 с приоритетом $wfl4"
 green "2：Сбросить домены маршрутизации warp-wireguard-ipv6 с приоритетом $wfl6"
 green "3：Сбросить домены маршрутизации warp-socks5-ipv4 с приоритетом $sfl4"
