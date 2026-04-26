@@ -4211,14 +4211,14 @@ yellow "0：Вернуться назад"
 readp "Выберите【0-3】：" menu
 if [ "$menu" = "1" ]; then
 ins
-nohup /etc/s-box/sbwpph -b 127.0.0.1:$port --gool -$sw46 --endpoint 162.159.192.1:2408 >/dev/null 2>&1 &
+nohup /etc/s-box/sbwpph -b 127.0.0.1:$port -$sw46 --endpoint 162.159.192.1:2408 >/dev/null 2>&1 &
 green "Получение IP……пожалуйста, подождите……" && sleep 20
 resv1=$(curl -sm3 --socks5 localhost:$port icanhazip.com)
 resv2=$(curl -sm3 -x socks5h://localhost:$port icanhazip.com)
 if [[ -z $resv1 && -z $resv2 ]]; then
 red "Не удалось получить IP для WARP-plus-Socks5" && unins && exit
 else
-echo "/etc/s-box/sbwpph -b 127.0.0.1:$port --gool -$sw46 --endpoint 162.159.192.1:2408 >/dev/null 2>&1" > /etc/s-box/sbwpph.log
+echo "/etc/s-box/sbwpph -b 127.0.0.1:$port -$sw46 --endpoint 162.159.192.1:2408 >/dev/null 2>&1" > /etc/s-box/sbwpph.log
 aplws5
 green "IP для WARP-plus-Socks5 успешно получен, можно использовать маршрутизацию через Socks5"
 fi
